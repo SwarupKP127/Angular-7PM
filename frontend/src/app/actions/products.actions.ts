@@ -18,12 +18,12 @@ export class ProductsLoading implements Action{
 
 export class ProductsLoadingSuccess implements Action{
      public readonly type = ProductsActions.ProductsLoadingSuccess;
-     constructor(products:Product[]){}
+     constructor(public products:Product[]){}
 };
 
 export class ProductsLoadingFail implements Action{
     public readonly type = ProductsActions.ProductsLoadingFail;
-    constructor(err:HttpErrorResponse){}
+    constructor(public err:string){}
 };
 
 export type ProductsActionTypes = ProductsLoading | ProductsLoadingSuccess | ProductsLoadingFail;

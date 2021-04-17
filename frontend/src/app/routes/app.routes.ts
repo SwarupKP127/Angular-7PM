@@ -4,7 +4,7 @@ import { DetailsComponent } from "../screens/details.component";
 import { ProductsComponent } from "../screens/products.component";
 
 export const appRoutes:Routes=[
-    {path:"products", component:ProductsComponent},
+    {path:"", component:ProductsComponent},
     {path:"details", component:DetailsComponent},
-    {path:"", component:CartComponent}
+    {path:"cart", component:CartComponent}
 ];
