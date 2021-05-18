@@ -65,3 +65,32 @@ html{
   a:hover{
     color: chocolate;
   }
+
+  .card{
+    border: 0.1rem solid #c0c0c0;
+    background-color: #f8f8f8;
+    margin: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .card-body{
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .card-body>*{
+    margin-bottom:0.5rem;
+  }
+
+  .price{
+    font-size: 2rem;
+  }
+
+  .rating span{
+    color : #ecb00a;
+    margin : 0.1rem;
+  }
+
+  .rating span:last-child{
+    color : #989898;
+  }

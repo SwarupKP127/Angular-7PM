@@ -12,6 +12,7 @@ import { productsReducer } from './reducer/products.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { ProductsEffects } from './effects/products.effects';
 import { HttpClientModule } from '@angular/common/http';
+import { Rating } from './screens/rating.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     DetailsComponent,
     CartComponent,
+    Rating
   ],
   imports: [
     BrowserModule,

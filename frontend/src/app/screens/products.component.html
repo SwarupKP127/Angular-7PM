@@ -1,1 +1,31 @@
-<h1>{{loading}}...{{products | json}}...{{error}}</h1>
+<!--<rating [product_rating]="obj.rating" 
+        [product_numReviews]="obj.numReviews" *ngFor="let obj of products"></rating>-->
+
+<!--
+     1) row
+     2) center
+     3) card
+     4)card-body
+     5)price
+-->
+
+<div class="row center">
+
+    <div *ngFor="let obj of products">
+        <div class="card">
+             <a href="#">
+               <img src={{obj.image}}>
+             </a>
+
+             <div class="card-body">
+                 <h2> {{obj.name}} </h2>
+                 <!--  rating -->
+                 <rating [product_rating]="obj.rating" 
+                 [product_numReviews]="obj.numReviews"></rating>
+                 <div class="price">
+                    Price $ {{obj.price}}
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
