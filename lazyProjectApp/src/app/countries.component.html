@@ -1,23 +1,42 @@
+<div>    
+    <div class="row" style="margin-top:10px;margin-bottom: 10px;">    
+      <div class="col-sm-12 btn btn-success">  
+        Loader in Angular Application with Dynamic  Data     
+      </div>    
+    </div>    
+    <div class="row" style="margin-top:10px;margin-bottom: 10px;">    
+    </div>    
+  </div> 
+<div>
 <table border="1"
-       cellpading="10px"
-       cellspacing="10px"
-       align="center">
-    <tr>
-        <th>SNO</th>
-        <th>Name</th>
-        <th>Capital</th>
-        <th>Region</th>
-        <th>Population</th>
-        <th>nativeName</th>
-        <th>Flag</th>
-    </tr>
-    <tr *ngFor="let obj of result;let i=index">
-        <td>{{i+1}}</td>
-        <td>{{obj.name}}</td>
-        <td>{{obj.capital}}</td>
-        <td>{{obj.region}}</td>
-        <td>{{obj.population}}</td>
-        <td>{{obj.nativeName}}</td>
-        <td><img width="100px" height="50px" src={{obj.flag}}></td>
-    </tr>
-</table>
+            cellpading="10px"
+            cellspacing="10px"
+            align="center">
+         <tr>
+             <th>SNO</th>
+             <th>Name</th>
+             <th>Capital</th>
+             <th>Region</th>
+             <th>Population</th>
+             <th>nativeName</th>
+             <th>Flag</th>
+         </tr>
+         <tr *ngFor="let obj of result;let i=index">
+             <td>{{i+1}}</td>
+             <td>{{obj.name}}</td>
+             <td>{{obj.capital}}</td>
+             <td>{{obj.region}}</td>
+             <td>{{obj.population}}</td>
+             <td>{{obj.nativeName}}</td>
+             <td><img width="100px" height="50px" src={{obj.flag}}></td>
+         </tr>
+     </table>
+    </div>
+     <!--<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+        <p style="color: white">Please Wait. </p>  
+        </ngx-spinner>-->
+       <!-- <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+            <p style="color: white">Please Wait. </p>  
+            </ngx-spinner>-->
+
+           <!--<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>-->

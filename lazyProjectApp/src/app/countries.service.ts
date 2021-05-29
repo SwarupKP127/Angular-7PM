@@ -7,10 +7,13 @@ import { Countries } from "./countries.modal";
     providedIn:"root"
 })
 export class countriesService{
+    url:any;
     constructor(private http:HttpClient){}
 
     public getCountries():Observable<Countries[]>{
-        return this.http.get<Countries[]>("https://restcountries.eu/rest/v2/all");
+        this.url='https://restcountries.eu/rest/v2/all';  
+        return this.http.get<Countries[]>(this.url);
+        //return this.http.get<Countries[]>("https://restcountries.eu/rest/v2/all");
     }
 
 
